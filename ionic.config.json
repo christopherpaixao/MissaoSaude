@@ -1,5 +1,7 @@
 {
   "name": "missao-saude",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

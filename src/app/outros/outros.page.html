@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button defaultHref="home" color="primary"></ion-back-button>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <!-- <ion-card-subtitle>Get Started</ion-card-subtitle> -->
+          <ion-card-title color="primary">OUTROS</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    <ion-item (click)="openVideos()">
+        <ion-label color="primary">
+              Tabagismo
+        </ion-label>
+      </ion-item>
+      <ion-item (click)="openVideos()">
+          <ion-label color="primary">
+              Alcoolismo
+            </ion-label>
+        </ion-item>
+        <ion-item (click)="openVideos()">
+            <ion-label color="primary">
+                Drogas Lícitas
+              </ion-label>
+          </ion-item>
+          <ion-item (click)="openVideos()">
+              <ion-label color="primary">
+                  Drogas Ilícitas
+                </ion-label>
+            </ion-item>
+            <ion-item (click)="abrirDicas()">
+                <ion-label color="primary">
+                  Pornografia 
+                  </ion-label>
+              </ion-item>
+
+</ion-content>

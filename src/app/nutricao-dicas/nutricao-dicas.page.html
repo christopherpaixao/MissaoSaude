@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button defaultHref="home" color="primary"></ion-back-button>
+        </ion-buttons>
+    <ion-title color="primary">DICAS DE NUTRIÇÃO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item (click)="abrirAlimentosIndustrizalizados()">
+        <ion-label color="primary">
+            Cuidado com alimentos industrializados
+        </ion-label>
+      </ion-item>
+      <ion-item (click)="abrirComerConsciente()">
+          <ion-label color="primary">
+              12 passos do mindful eating (comer consciente)
+            </ion-label>
+        </ion-item>
+
+</ion-content>

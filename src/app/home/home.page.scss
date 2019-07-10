@@ -1,1 +1,49 @@
-
+  .welcome-card ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  .titleicon div{
+    display:inline-block;
+    margin-bottom:10px;
+    }
+  .titleicon {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      text-align:center;
+  }
+  .btn{
+    margin-top: 25px;
+    //text-align: center;
+  }
+  
+.label {
+  position: absolute;
+  //right: 48px;
+  //background: rgba(0,0,0,0.7);
+  //height: 24px;
+  //line-height: 16px;
+ /*  padding-left: 20px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px; */
+  padding-left: 10px;
+  text-align: center;
+  margin-top: 5px;
+  //border-radius: 3px;
+  color: #0161df;
+  font-size: 1rem;
+  //box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+.label2{
+  position: absolute;
+  padding-left: 25px;
+  text-align: center;
+  color: #0161df;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+ion-content {
+  --background: url('../../assets/img/background.png') no-repeat center center / cover !important;
+}

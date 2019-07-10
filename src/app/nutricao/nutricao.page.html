@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button defaultHref="home" color="primary"></ion-back-button>
+        </ion-buttons>    
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <!-- <ion-card-subtitle>Get Started</ion-card-subtitle> -->
+          <ion-card-title color="primary">NUTRIÇÃO</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    <ion-item (click)="openVideos()">
+        <ion-label color="primary">
+            Sugestão de lanches funcionais e saudáveis
+        </ion-label>
+      </ion-item>
+      <ion-item (click)="openVideos()">
+          <ion-label color="primary">
+              Quadro comparativo de preços
+            </ion-label>
+        </ion-item>
+        <ion-item (click)="openVideos()">
+            <ion-label color="primary">
+              Receitas de sucos saudaveis
+              </ion-label>
+          </ion-item>
+          <ion-item (click)="openVideos()">
+              <ion-label color="primary">
+                Sugestões de lanches para eventos da igreja
+                </ion-label>
+            </ion-item>
+            <ion-item (click)="abrirDicas()">
+                <ion-label color="primary">
+                Dicas
+                  </ion-label>
+              </ion-item>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button color="primary"></ion-back-button>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <!-- <ion-card-subtitle>Get Started</ion-card-subtitle> -->
+          <ion-card-title color="primary">SAÚDE DO HOMEM</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    <ion-item (click)="abrirHipertensao()">
+        <ion-label color="primary">
+            8 Dicas para evitar e controlar a hipertensão
+        </ion-label>
+      </ion-item>
+
+      <ion-item (click)="abrirColunaSaudavel()">
+          <ion-label color="primary">
+              Dicas para uma coluna saudável
+          </ion-label>
+        </ion-item>
+
+        <ion-item (click)="abrirPrevencaoDengue()">
+            <ion-label color="primary">
+                Prevenção da dengue: 10 dicas para se cuidar
+            </ion-label>
+          </ion-item>
+
+</ion-content>
