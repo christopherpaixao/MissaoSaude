@@ -15,6 +15,12 @@ const routes: Routes = [
   { path: 'coluna-saudavel', loadChildren: './coluna-saudavel/coluna-saudavel.module#ColunaSaudavelPageModule' },
   { path: 'prevencao-dengue', loadChildren: './prevencao-dengue/prevencao-dengue.module#PrevencaoDenguePageModule' },
   { path: 'outros', loadChildren: './outros/outros.module#OutrosPageModule' },
+  { path: 'saude-mental', loadChildren: './saude-mental/saude-mental.module#SaudeMentalPageModule' },
+  { path: 'saude-mulher', loadChildren: './saude-mulher/saude-mulher.module#SaudeMulherPageModule' },
+  { path: 'saude-idoso', loadChildren: './saude-idoso/saude-idoso.module#SaudeIdosoPageModule' },
+  { path: 'saude-adolescente', loadChildren: './saude-adolescente/saude-adolescente.module#SaudeAdolescentePageModule' },
+  { path: 'saude-crianca', loadChildren: './saude-crianca/saude-crianca.module#SaudeCriancaPageModule' },
+  { path: 'disfuncoes', loadChildren: './disfuncoes/disfuncoes.module#DisfuncoesPageModule' },
 ];
 
 @NgModule({

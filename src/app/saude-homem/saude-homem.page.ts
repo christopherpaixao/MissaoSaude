@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-saude-homem',
@@ -8,11 +9,11 @@ import { Router } from '@angular/router';
 })
 export class SaudeHomemPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private iab: InAppBrowser) { }
 
   ngOnInit() {
   }
-  abrirHipertensao(){
+/*   abrirHipertensao(){
     this.router.navigate(['controlar-hipertensao']);
   }
   abrirColunaSaudavel(){
@@ -20,5 +21,16 @@ export class SaudeHomemPage implements OnInit {
   }
   abrirPrevencaoDengue(){
     this.router.navigate(['prevencao-dengue']);
+  } */
+
+  abrirUrl(url:string){
+    
+    //setup option
+    const options: InAppBrowserOptions = {
+      zoom: 'no'
+    }
+    //abrir a url
+    const browser = this.iab.create(url, '_self', options);
+    
   }
 }

@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home" color="primary"></ion-back-button>
+          </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+      <ion-card class="welcome-card">
+          <ion-img src="http://biblioteca.cofen.gov.br/wp-content/uploads/2018/07/31232321.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title color="primary">SAÚDE DA CRIANÇA</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+
+        <ion-item (click)="abrirUrl('https://saude.abril.com.br/alimentacao/o-perigo-da-obesidade-infantil/')">
+          <ion-thumbnail slot="start">
+              <img src="http://www.fiocruz.br/biosseguranca/Bis/infantil/obesidade5.gif">
+            </ion-thumbnail>
+          <ion-label color="primary">
+            O perigo da obesidade infantil
+          </ion-label>
+        </ion-item>
+  
+  </ion-content>

@@ -21,22 +21,12 @@ export class HomePage {
     private admobFree: AdMobFree
 ){}
 
- abrirVideos(){
-  this.router.navigate(['videos']);
+ngOnInit() {
+
+  this.showBannerAd();
 }
-abrirNutricao(){
-  this.router.navigate(['nutricao']);
-}
-abrirProjeto(){
-  this.router.navigate(['projeto']);
-}
-abrirSaudeHomem(){
-  this.router.navigate(['saude-homem']);
-}
-abrirOutros(){
-  this.router.navigate(['outros']);
-}
-showBannerAd() {
+
+ showBannerAd() {
         let bannerConfig: AdMobFreeBannerConfig = {
             isTesting: true, // Remove in production
             autoShow: true//,

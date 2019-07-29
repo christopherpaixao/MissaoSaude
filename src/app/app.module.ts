@@ -10,6 +10,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SMS } from '@ionic-native/sms/ngx';
 import { AdMobFree } from '@ionic-native/admob-free/ngx';
+import { VideoPlayer } from '@ionic-native/video-player/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +23,9 @@ import { AdMobFree } from '@ionic-native/admob-free/ngx';
     SplashScreen,
     AdMobFree,
     SMS,
+    VideoPlayer,
+    InAppBrowser,
+    YoutubeVideoPlayer ,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
