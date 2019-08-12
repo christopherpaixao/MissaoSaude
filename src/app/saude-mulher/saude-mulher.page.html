@@ -9,11 +9,29 @@
   <ion-content>
   
       <ion-card class="welcome-card">
-          <ion-img src="https://www.ibgh.org.br/wp-content/uploads/2018/01/hma_img_destaque.png"></ion-img>
+          <ion-img src="assets/img/saude-mulher-capa.jpg"></ion-img>
           <ion-card-header>
             <ion-card-title color="primary">SAÚDE DA MULHER</ion-card-title>
           </ion-card-header>
         </ion-card>
+
+        <ion-item (click)="abrirUrl('https://pebmed.com.br/diagnostico-da-menopausa-o-que-ha-de-novo/')">
+          <ion-thumbnail slot="start">
+              <img src="assets/img/saude-mulher-1.jpg">
+            </ion-thumbnail>
+          <ion-label color="primary">
+            Diagnóstico da Menopausa: O que há de novo?
+          </ion-label>
+        </ion-item>
+
+        <ion-item (click)="abrirUrl('https://pebmed.com.br/rotina-fixa-de-trabalho-ajuda-a-ter-pratica-regular-de-exercicio-fisico/')">
+          <ion-thumbnail slot="start">
+              <img src="assets/img/saude-mulher-2.jpg">
+            </ion-thumbnail>
+          <ion-label color="primary">
+            Prática Regular de Exercício Físico
+          </ion-label>
+        </ion-item>
   
   </ion-content>
   

@@ -28,9 +28,9 @@ ngOnInit() {
 
  showBannerAd() {
         let bannerConfig: AdMobFreeBannerConfig = {
-            isTesting: true, // Remove in production
-            autoShow: true//,
-            //id: "ca-app-pub-3940256099942544/6300978111"
+            //isTesting: true,  Remove in production
+            autoShow: true,
+            id: "ca-app-pub-1047006946825809/8301360413"
         };
         this.admobFree.banner.config(bannerConfig);
  

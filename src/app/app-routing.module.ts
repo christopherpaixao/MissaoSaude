@@ -21,6 +21,8 @@ const routes: Routes = [
   { path: 'saude-adolescente', loadChildren: './saude-adolescente/saude-adolescente.module#SaudeAdolescentePageModule' },
   { path: 'saude-crianca', loadChildren: './saude-crianca/saude-crianca.module#SaudeCriancaPageModule' },
   { path: 'disfuncoes', loadChildren: './disfuncoes/disfuncoes.module#DisfuncoesPageModule' },
+  { path: 'avisos', loadChildren: './avisos/avisos.module#AvisosPageModule' },
+  { path: 'compartilhar', loadChildren: './compartilhar/compartilhar.module#CompartilharPageModule' },
 ];
 
 @NgModule({
