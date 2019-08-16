@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/ngx';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+
 
 
 @Component({
@@ -9,7 +11,7 @@ import { InAppBrowser, InAppBrowserOptions } from '@ionic-native/in-app-browser/
 })
 export class AvisosPage implements OnInit {
 
-  constructor(private iab: InAppBrowser) { }
+  constructor(private iab: InAppBrowser, private socialSharing: SocialSharing) { }
 
   ngOnInit() {
   }
@@ -24,5 +26,9 @@ export class AvisosPage implements OnInit {
     const browser = this.iab.create(url, '_self', options);
     
   }
+
+  whatsappShare() {
+    this.socialSharing.shareViaWhatsApp("Baixe o aplicativo Missão Saúde.", "www/assets/img/logo-missao-saude.png", "https://play.google.com/store/apps/details?id=com.devplus.missaosaude");
+}
 
 }

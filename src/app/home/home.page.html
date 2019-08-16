@@ -1,9 +1,4 @@
 <ion-header>
-  <!-- <ion-toolbar color="success">
-    <div class="titleicon">
-      <img src="/assets/img/barra.png" width="100px" />
-    </div>
-  </ion-toolbar> -->
   <img src="../../assets/img/barra.png" />
 </ion-header>
 
@@ -13,18 +8,15 @@
     <ion-row>
       <ion-col align-self-start>
         <ion-img class="btn" src="assets/icon/projeto-icone.png" style="width : 100% ; height : 100%"
-        [routerLink]="['/projeto']" routerdirection="forward" (click)="showBannerAd()"></ion-img>
-         <!-- <span class="label2">Projeto</span> -->     
+        [routerLink]="['/projeto']" routerdirection="forward"></ion-img>
       </ion-col>
       <ion-col align-self-center>
         <ion-img class="btn" src="assets/icon/videos-icone.png" style="width : 100% ; height : 100%"
         [routerLink]="['/videos']" routerdirection="forward"></ion-img>
-        <!-- <span class="label2">Videos</span> -->
       </ion-col>
       <ion-col align-self-end>
         <ion-img class="btn" src="assets/icon/nutricao.png" style="width : 100% ; height : 100%"
         [routerLink]="['/nutricao']" routerdirection="forward"></ion-img>
-         <!-- <span class="label2">Diabetes</span> -->
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -34,17 +26,14 @@
         <ion-col align-self-start>
           <ion-img class="btn" src="assets/icon/saude-mental.png" style="width : 100% ; height : 100%"
           [routerLink]="['/saude-mental']" routerdirection="forward"></ion-img>
-          <!-- <span class="label">Depressão</span> -->
         </ion-col>
         <ion-col align-self-center>
           <ion-img class="btn" src="assets/icon/saude-da-mulher.png" style="width : 100% ; height : 100%"
           [routerLink]="['/saude-mulher']" routerdirection="forward"></ion-img> 
-         <!-- <span class="label">Tabagismo</span> -->
         </ion-col>
         <ion-col align-self-end>
           <ion-img class="btn" src="assets/icon/saude-do-homem.png" style="width : 100% ; height : 100%"
           [routerLink]="['/saude-homem']" routerdirection="forward"></ion-img>
-         <!-- <span class="label">Ansiedade</span>  -->
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -54,17 +43,14 @@
         <ion-col align-self-start>
           <ion-img class="btn" src="assets/icon/saude-do-idoso.png" style="width : 100% ; height : 100%"
           [routerLink]="['/saude-idoso']" routerdirection="forward"></ion-img>
-          <!-- <span class="label2">Preguiça</span>  -->       
         </ion-col>
         <ion-col align-self-center>
           <ion-img class="btn" src="assets/icon/saude-do-adolescente.png" style="width : 100% ; height : 100%"
           [routerLink]="['/saude-adolescente']" routerdirection="forward"></ion-img>
-          <!-- <span class="label2">Nutrição</span> --> 
         </ion-col>
         <ion-col align-self-end>
           <ion-img class="btn" src="assets/icon/saude-da-crianca.png" style="width : 100% ; height : 100%"
           [routerLink]="['/saude-crianca']" routerdirection="forward"></ion-img> 
-          <!-- <span class="label2">Dietas</span> -->
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -74,20 +60,17 @@
         <ion-col align-self-start>
           <ion-img class="btn" src="assets/icon/outros.png" style="width : 100% ; height : 100%"
           [routerLink]="['/outros']" routerdirection="forward"></ion-img>
-          <!-- <span class="label2">Preguiça</span>  -->       
         </ion-col>
         <ion-col align-self-center>
           <ion-img class="btn" src="assets/icon/avisos.png" style="width : 100% ; height : 100%"
           [routerLink]="['/avisos']" routerdirection="forward"></ion-img>
-          <!-- <span class="label2">Nutrição</span> --> 
         </ion-col>
         <ion-col align-self-end>
           <ion-img class="btn" src="assets/icon/compartilhar.png" style="width : 100% ; height : 100%"
-          [routerLink]="['/']" routerdirection="forward"></ion-img> 
+          (click)="whatsappShare()" routerdirection="forward"></ion-img> 
         </ion-col>
       </ion-row>
     </ion-grid> 
 
-<!--      <ion-button shape="round" color="primary" fill="outline" (click)="showBannerAd()">Show Banner Ad</ion-button>  -->
   </ion-content> 
 

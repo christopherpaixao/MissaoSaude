@@ -13,6 +13,7 @@ import { AdMobFree } from '@ionic-native/admob-free/ngx';
 import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +26,8 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
     SMS,
     VideoPlayer,
     InAppBrowser,
-    YoutubeVideoPlayer ,
+    YoutubeVideoPlayer,
+    SocialSharing,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
