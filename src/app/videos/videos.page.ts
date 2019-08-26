@@ -16,9 +16,9 @@ export class VideosPage implements OnInit {
   /* abrirVideo(){
     this.youtube.openVideo('https://youtu.be/hupImCcvw0M');
   } */
-  watch(watch){
+  /* watch(watch){
     this.youtube.openVideo(watch);
 
-  }
+  } */
 
 }
