@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
-import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 @NgModule({
@@ -26,7 +25,6 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     VideoPlayer,
     InAppBrowser,
-    YoutubeVideoPlayer,
     SocialSharing,
   ],
   bootstrap: [AppComponent]
