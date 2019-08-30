@@ -12,6 +12,8 @@ import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
+import {Firebase} from '@ionic-native/firebase/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -20,6 +22,7 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
     IonicModule.forRoot(),
     AppRoutingModule],
   providers: [
+    Firebase,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
