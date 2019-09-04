@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'disfuncoes', loadChildren: './disfuncoes/disfuncoes.module#DisfuncoesPageModule' },
   { path: 'avisos', loadChildren: './avisos/avisos.module#AvisosPageModule' },
   { path: 'compartilhar', loadChildren: './compartilhar/compartilhar.module#CompartilharPageModule' },
+  { path: 'parceiros', loadChildren: './parceiros/parceiros.module#ParceirosPageModule' },
 ];
 
 @NgModule({

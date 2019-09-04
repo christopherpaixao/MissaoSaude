@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^7.2.2",
     "@angular/platform-browser-dynamic": "^7.2.2",
     "@angular/router": "^7.2.2",
+    "@ionic-native/admob-free": "^5.13.0",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/firebase": "^5.12.0",
     "@ionic-native/in-app-browser": "^5.10.0",
@@ -29,7 +30,9 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic-native/video-player": "^5.10.0",
     "@ionic/angular": "^4.1.0",
+    "cordova-admob-sdk": "^0.24.1",
     "cordova-android": "8.0.0",
+    "cordova-plugin-admob-free": "^0.27.0",
     "cordova-plugin-androidx": "^1.0.2",
     "cordova-plugin-androidx-adapter": "^1.1.0",
     "cordova-plugin-device": "^2.0.2",
@@ -43,6 +46,7 @@
     "cordova-plugin-video-player": "git+https://github.com/moust/cordova-plugin-videoplayer.git",
     "cordova-plugin-whitelist": "^1.3.3",
     "cordova-plugin-x-socialsharing": "5.4.7",
+    "cordova-promise-polyfill": "0.0.2",
     "core-js": "^2.5.4",
     "es6-promise-plugin": "4.2.2",
     "phonegap-plugin-multidex": "1.0.0",
@@ -96,7 +100,10 @@
       "cordova.custom.plugins.exitapp": {},
       "cordova-plugin-androidx": {},
       "cordova-plugin-androidx-adapter": {},
-      "cordova-plugin-firebase": {}
+      "cordova-plugin-firebase": {},
+      "cordova-plugin-admob-free": {
+        "ADMOB_APP_ID": "ca-app-pub-1047006946825809~2454137362"
+      }
     },
     "platforms": [
       "android"

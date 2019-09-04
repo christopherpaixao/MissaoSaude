@@ -13,6 +13,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 import {Firebase} from '@ionic-native/firebase/ngx';
+import { AdMobFree} from '@ionic-native/admob-free/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +31,7 @@ import {Firebase} from '@ionic-native/firebase/ngx';
     VideoPlayer,
     InAppBrowser,
     SocialSharing,
+    AdMobFree,
   ],
   bootstrap: [AppComponent]
 })

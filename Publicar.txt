@@ -1,0 +1,5 @@
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore Missao-Saude.keystore platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk Missao-Saude
+
+cd platforms\android\app\build\outputs\apk\release
+
+zipalign -v 4 app-release-unsigned.apk MissaoSaude1.7.1.apk
