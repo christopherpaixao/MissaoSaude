@@ -2,4 +2,4 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore Missao-Saude.ke
 
 cd platforms\android\app\build\outputs\apk\release
 
-zipalign -v 4 app-release-unsigned.apk MissaoSaude1.7.1.apk
+zipalign -v 4 app-release-unsigned.apk MissaoSaude1.7.2.apk
