@@ -39,6 +39,7 @@
     "cordova-plugin-exitapp": "^1.0.0",
     "cordova-plugin-firebase": "^2.0.5",
     "cordova-plugin-inappbrowser": "3.1.0",
+    "cordova-plugin-ionic": "^5.4.4",
     "cordova-plugin-ionic-keyboard": "^2.1.3",
     "cordova-plugin-ionic-webview": "^3.1.2",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -103,6 +104,14 @@
       "cordova-plugin-firebase": {},
       "cordova-plugin-admob-free": {
         "ADMOB_APP_ID": "ca-app-pub-1047006946825809~2454137362"
+      },
+      "cordova-plugin-ionic": {
+        "APP_ID": "946d32ca",
+        "CHANNEL_NAME": "Production",
+        "UPDATE_METHOD": "background",
+        "MAX_STORE": "2",
+        "MIN_BACKGROUND_DURATION": "30",
+        "UPDATE_API": "https://api.ionicjs.com"
       }
     },
     "platforms": [
