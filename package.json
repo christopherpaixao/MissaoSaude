@@ -106,9 +106,8 @@
         "ADMOB_APP_ID": "ca-app-pub-1047006946825809~2454137362"
       },
       "cordova-plugin-ionic": {
-        "APP_ID": "946d32ca",
-        "CHANNEL_NAME": "Master",
-        "UPDATE_METHOD": "background"
+        "APP_ID": "6f5d53e1",
+        "CHANNEL_NAME": "Master"
       }
     },
     "platforms": [
