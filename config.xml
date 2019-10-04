@@ -20,6 +20,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="YouTubeDataApiKey" value="AIzaSyBKPlcSUNzW99byai5Wt6C9RvDA29dItlU" />
+    <preference name="DisableDeploy" value="true" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
