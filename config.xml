@@ -20,7 +20,6 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="YouTubeDataApiKey" value="AIzaSyBKPlcSUNzW99byai5Wt6C9RvDA29dItlU" />
-    <preference name="DisableDeploy" value="false" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -84,4 +83,12 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^3.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-ionic" spec="5.2.9">
+        <variable name="APP_ID" value="71405bdd" />
+        <variable name="CHANNEL_NAME" value="Master" />
+        <variable name="UPDATE_METHOD" value="auto" />
+        <variable name="UPDATE_API" value="https://api.ionicjs.com" />
+        <variable name="MAX_STORE" value="2" />
+        <variable name="MIN_BACKGROUND_DURATION" value="30" />
+    </plugin>
 </widget>
