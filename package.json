@@ -107,9 +107,13 @@
         "ADMOB_APP_ID": "ca-app-pub-1047006946825809~2454137362"
       },
       "cordova-plugin-ionic": {
-        "APP_ID": "6f5d53e1",
+        "APP_ID": "71405bdd",
         "CHANNEL_NAME": "Master",
-        "METHOD": "auto"
+        "UPDATE_METHOD": "background",
+        "WARN_DEBUG" :"true" ,
+        "UPDATE_API" :"https://api.ionicjs.com",
+        "MAX_STORE" :"2" ,
+        "MIN_BACKGROUND_DURATION" :"30"
       },
       "ionic-plugin-deploy": {}
     },
