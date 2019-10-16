@@ -50,6 +50,7 @@
     "cordova-promise-polyfill": "0.0.2",
     "core-js": "^2.5.4",
     "es6-promise-plugin": "4.2.2",
+    "ionic-plugin-deploy": "0.6.7",
     "phonegap-plugin-multidex": "1.0.0",
     "rxjs": "^6.5.0",
     "rxjs-compat": "^6.5.2",
@@ -109,7 +110,8 @@
         "APP_ID": "6f5d53e1",
         "CHANNEL_NAME": "Master",
         "METHOD": "auto"
-      }
+      },
+      "ionic-plugin-deploy": {}
     },
     "platforms": [
       "android"
