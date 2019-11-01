@@ -13,9 +13,6 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 import {Firebase} from '@ionic-native/firebase/ngx';
-import { AdMobFree} from '@ionic-native/admob-free/ngx';
-
-
 
 
 @NgModule({
@@ -32,8 +29,7 @@ import { AdMobFree} from '@ionic-native/admob-free/ngx';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     VideoPlayer,
     InAppBrowser,
-    SocialSharing,
-    AdMobFree,
+    SocialSharing
   ],
   bootstrap: [AppComponent]
 })

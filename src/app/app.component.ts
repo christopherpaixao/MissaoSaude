@@ -3,7 +3,6 @@ import { Platform, AlertController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Firebase } from '@ionic-native/firebase/ngx';
-import { AdMobFree, AdMobFreeBannerConfig, AdMobFreeInterstitialConfig } from '@ionic-native/admob-free/ngx';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +14,7 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private alertCtrl: AlertController,
-    private firebase: Firebase,
-    private admobFree: AdMobFree,
+    private firebase: Firebase
 
   ) {
     this.initializeApp();
@@ -27,11 +25,15 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
       this.solicitarTokenDoFirebase();
-      this.pushAdmob();
+
+      /* App Upadate */
+      
+      /* Fim App Upadete */
     });
 
   }
-  /* Config Admob */
+
+  /* Config Admob
   pushAdmob(){
     const bannerConfig: AdMobFreeBannerConfig = {
       isTesting: false,
@@ -47,7 +49,7 @@ export class AppComponent {
        })
        .catch(e => console.log(e));
   }
-  /* Fim config Admob */
+  Fim config Admob */
  
   
 
