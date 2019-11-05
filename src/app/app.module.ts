@@ -5,14 +5,14 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
-
-import {Firebase} from '@ionic-native/firebase/ngx';
+import { FirebaseX } from '@ionic-native/firebase-x/ngx';
+//import {Firebase} from '@ionic-native/firebase/ngx';
+//import { FirebaseX } from '@ionic-native/firebase-x';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import {Firebase} from '@ionic-native/firebase/ngx';
     IonicModule.forRoot(),
     AppRoutingModule],
   providers: [
-    Firebase,
+    FirebaseX,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

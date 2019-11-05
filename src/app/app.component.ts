@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { Platform, AlertController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { Firebase } from '@ionic-native/firebase/ngx';
+//import { Firebase } from '@ionic-native/firebase/ngx';
+import { FirebaseX } from '@ionic-native/firebase-x/ngx';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private alertCtrl: AlertController,
-    private firebase: Firebase
+    private firebaseX: FirebaseX
 
   ) {
     this.initializeApp();
@@ -25,10 +26,6 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
       this.solicitarTokenDoFirebase();
-
-      /* App Upadate */
-      
-      /* Fim App Upadete */
     });
 
   }
@@ -56,9 +53,9 @@ export class AppComponent {
   /* Config Fireabse Menssagem*/
   solicitarTokenDoFirebase() {
 
-    this.firebase.getToken()
+    this.firebaseX.getToken()
       .then(token => {
-        console.log("firebase token recebido", token);
+        console.log("firebaseX token recebido", token);
         this.enviarTokenParaOservidor(token);
         this.iniciarListenerDeNotificacoes();
       }) // save the token server-side and use it to push notifications to this device
@@ -70,7 +67,7 @@ export class AppComponent {
 
   iniciarListenerDeNotificacoes() {
 
-    this.firebase.onNotificationOpen().subscribe((notification: any) => {
+    this.firebaseX.onMessageReceived().subscribe((notification: any) => {
 
       console.log(notification);
       if (!notification.tap) {
