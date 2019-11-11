@@ -24,6 +24,12 @@ const routes: Routes = [
   { path: 'avisos', loadChildren: './avisos/avisos.module#AvisosPageModule' },
   { path: 'compartilhar', loadChildren: './compartilhar/compartilhar.module#CompartilharPageModule' },
   { path: 'parceiros', loadChildren: './parceiros/parceiros.module#ParceirosPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' },
+  /* Firebase */
+  { path: '', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' },
+  //{ path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' }
 ];
 
 @NgModule({

@@ -13,7 +13,13 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { FirebaseX } from '@ionic-native/firebase-x/ngx';
 //import {Firebase} from '@ionic-native/firebase/ngx';
 //import { FirebaseX } from '@ionic-native/firebase-x';
+import { environment } from 'src/environments/environment';
+import { AuthenticateService } from './services/authentication.service';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+ 
+import * as firebase from 'firebase';
 
+firebase.initializeApp(environment.firebase);
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,11 +27,14 @@ import { FirebaseX } from '@ionic-native/firebase-x/ngx';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule],
+    AppRoutingModule,
+    AngularFireAuthModule
+  ],
   providers: [
     FirebaseX,
     StatusBar,
     SplashScreen,
+    AuthenticateService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     VideoPlayer,
     InAppBrowser,

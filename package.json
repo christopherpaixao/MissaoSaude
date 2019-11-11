@@ -15,6 +15,7 @@
   "dependencies": {
     "@angular/common": "^7.2.15",
     "@angular/core": "^7.2.15",
+    "@angular/fire": "^5.2.1",
     "@angular/forms": "^7.2.15",
     "@angular/http": "^7.2.15",
     "@angular/platform-browser": "^7.2.15",
@@ -47,6 +48,7 @@
     "cordova-plugin-x-socialsharing": "5.4.7",
     "core-js": "^2.6.10",
     "es6-promise-plugin": "4.2.2",
+    "firebase": "^7.3.0",
     "ionic-plugin-deploy": "0.6.7",
     "phonegap-plugin-multidex": "1.0.0",
     "rxjs": "^6.5.3",
